@@ -1,7 +1,7 @@
 import CardItem from "../CardItem";
 import style from "./Cards.module.css";
 
-export default function Cards ({ personagens }){
+export default function Cards({ personagens }){
 
 
 

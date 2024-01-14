@@ -1,0 +1,42 @@
+.cardItem {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #616161;
+  width: 110%;
+ 
+}
+
+.cardItem:hover {
+  background-color: #566769;
+}
+
+.name {
+  color: #000080;
+  font-family: 'Inter';
+  font-size: 15px;  
+  text-align: center;
+  gap: 20px;
+}
+
+.description {  
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 18px;
+  color: #b8b8ff;
+  padding: 15px;
+  gap: 20px;
+}
+
+
+
+img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+  padding: 15px;
+  gap: 30px;
+}

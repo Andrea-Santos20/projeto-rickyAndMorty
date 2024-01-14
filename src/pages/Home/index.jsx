@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import style from "./Home.module.css";
 import Header from "../../components/Header";
 import Cards from "../../components/Cards";
 import { api }  from "../../services/api";
+import Footer from "../../components/Footer";
 
 export default function Home (){
     
@@ -17,14 +17,13 @@ export default function Home (){
 
     useEffect(() => {
         getPersonagens()
-    }) 
+    },  []) 
 
     return (
         <>
-        <Header></Header>
-        <Cards 
-        personagens={personagens}> 
-        </Cards>
+        <Header/>
+        <Cards personagens={personagens}/>         
+        <Footer/>
         </>
     )
 }

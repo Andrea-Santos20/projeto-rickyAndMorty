@@ -1,0 +1,29 @@
+header {
+ 
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 55px;
+    font-size: 25px;
+    gap: 48px;
+    list-style: none;    
+    padding: 0;
+    
+  }
+
+.title {    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 100px;
+    font-family: 'Inter';
+    color: #FF4500;
+}
+
+.title:hover {
+    color: #ffa3a3;
+}
