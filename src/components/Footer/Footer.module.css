@@ -11,3 +11,8 @@ p {
     color: #646cff;
     gap: 7px;
 }
+
+p img {
+    gap: 1px;
+    margin: 0;
+}
