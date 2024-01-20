@@ -6,9 +6,10 @@ export default function Header (){
         <header>
 
             <ul>               
+                 
                 <li><a href="#">Home</a></li>                
                 <li><a href="../CardItem/index.jsx">Personagens</a></li>
-                <li><a href="../Footer/index.jsx#">Saiba mais</a></li>
+                <li><a href="../Footer/index.jsx">Saiba mais</a></li>
                 
             </ul>
 

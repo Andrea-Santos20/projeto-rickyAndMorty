@@ -21,7 +21,15 @@
     text-decoration: none;    
 }
 
+a:hover {
+   color: #FF9900;
+}
+
 .icon {
     font-size: 35px;    
 }
+
+.icon:hover {
+    color: #FF9900;
+ }
 

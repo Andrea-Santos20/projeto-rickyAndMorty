@@ -3,8 +3,6 @@ header ul {
   margin-top: 0;
 }
 
-
-
 ul {
     display: flex;
     justify-content: flex-end;
