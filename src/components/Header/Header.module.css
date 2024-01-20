@@ -1,29 +1,62 @@
-header {
- 
+header ul {
+  background-color: #9e9090;
+  margin-top: 0;
 }
+
+
 
 ul {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-top: 55px;
-    font-size: 25px;
-    gap: 48px;
-    list-style: none;    
-    padding: 0;
-    
+    align-items: center;    
+    list-style: none; 
+    font-size: 18px;
+    font-weight: bold;
+    gap: 48px;      
+    padding: 25px;    
+
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #000080;
+  }
+
+  a:hover {
+    background-color: #9e9090;
   }
 
 .title {    
     width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 50px;
+    justify-content: center;    
+    background-color: #9e9090;
     font-size: 100px;
-    font-family: 'Inter';
+    font-family: 'Rubik Burned', system-ui;
     color: #FF4500;
+    padding: 25px;
+
+    animation: blink 2.5s infinite;
+    
+}
+
+.titleWithTransition {
+  transition: color 0.5s ease-in-out; 
 }
 
 .title:hover {
-    color: #ffa3a3;
+    color: #FF9900;
 }
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

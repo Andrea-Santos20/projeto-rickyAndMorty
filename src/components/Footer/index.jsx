@@ -1,4 +1,5 @@
 import style from "./Footer.module.css";
+import { BiBookHeart } from "react-icons/bi";
 
 export default function Footer (){
 
@@ -6,7 +7,7 @@ export default function Footer (){
         <>
             
             <p className={style.footer}>Para saber mais acesse a 
-            <img src="/src/components/Footer/book.png" alt="figura de um livro" /> 
+                <BiBookHeart className={style.icon} alt="Figura de um livro azul." />            
             <a href="https://rickandmortyapi.com/documentation" target="_blanck">Documentação</a>
             </p>
         </>

@@ -17,7 +17,7 @@ export default function Home (){
 
     useEffect(() => {
         getPersonagens()
-    },  []) 
+    }, []) 
 
     return (
         <>

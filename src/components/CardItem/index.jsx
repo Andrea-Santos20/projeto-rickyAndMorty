@@ -1,6 +1,7 @@
 import style from "./CardItem.module.css";
+import { Link } from "react-router-dom";
 
-export default function CardItem ({name, status, species, type, image}){
+export default function CardItem ({name, status, species, type, image, id}){
 
     return (
         <>
@@ -13,7 +14,10 @@ export default function CardItem ({name, status, species, type, image}){
                 <p>{species}</p>
                 <p>{type}</p>
             </div>
-            <img src={image} alt="" />
+            
+            <img className={style.img} src={image} alt="" />
+
+            <Link to={`/personagem/${id}`} className={style.link}></Link>
         </div>
         </>
     )

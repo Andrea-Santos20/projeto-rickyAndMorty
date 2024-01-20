@@ -13,8 +13,7 @@ export default function RouteList() {
             <Route path="/" element={<Home />} />
             <Route path="/personagem/:id" element={<Personagem />} />
 
-        </Routes>
-    
+        </Routes>    
     </BrowserRouter>
     
     

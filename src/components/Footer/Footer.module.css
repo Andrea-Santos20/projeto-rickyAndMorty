@@ -2,17 +2,26 @@
 
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    font-weight: bold; 
+    font-size: 18.5px;    
+    gap: 7px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background-color: #9e9090;
     
 }
 
-p {
-    font-weight: 500;
-    color: #646cff;
-    gap: 7px;
+
+.footer, a {
+    color: #000080;
 }
 
-p img {
-    gap: 1px;
-    margin: 0;
+.footer a {
+    text-decoration: none;    
 }
+
+.icon {
+    font-size: 35px;    
+}
+
