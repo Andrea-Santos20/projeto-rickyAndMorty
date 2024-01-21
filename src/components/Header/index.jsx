@@ -5,18 +5,18 @@ import style from "./Header.module.css";
 export default function Header (){
 
     return (
+
         <header>
 
-            <ul>          
+            <ul className={style.lista}>          
                     
-                <li><Link to="/">Início</Link></li>
-                <li><Link to="/personagens">Personagens</Link></li>
-                <li><Link to="/saiba-mais">Saiba mais</Link></li>
+                <li><Link className={style.link} to="/">Início</Link></li>
+               {/*<li><Link className={style.link} to="/home">Personagens</Link></li>*/}
+                <li><Link className={style.link} to="/saiba-mais">Saiba mais</Link></li>
                 
             </ul>
 
             <h1 className={style.title}>Ricky And Morty</h1>
-
             
         </header>
     )

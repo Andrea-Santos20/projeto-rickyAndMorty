@@ -1,6 +1,6 @@
 import style from "./Footer.module.css";
+import { BiSolidBookHeart } from "react-icons/bi";
 
-import { FaBook } from "react-icons/fa";
 
 export default function Footer (){
 
@@ -8,8 +8,8 @@ export default function Footer (){
         <>
             
             <p className={style.footer}>Para saber mais acesse a 
-                <FaBook  />            
-            <a href="https://rickandmortyapi.com/documentation" target="_blanck">Documentação</a>
+                < BiSolidBookHeart className={style.icon} />          
+                <a href="https://rickandmortyapi.com/documentation" target="_blanck">Documentação</a>
             </p>
         </>
     )

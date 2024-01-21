@@ -14,10 +14,8 @@ export default function RouteList() {
             <Route path="/personagem/:id" element={<Personagem />} />
 
         </Routes>    
-    </BrowserRouter>
+    </BrowserRouter>    
     
+    )    
     
-    )
-    
-    
-    }
+}
