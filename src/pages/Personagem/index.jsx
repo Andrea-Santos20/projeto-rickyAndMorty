@@ -6,35 +6,28 @@ import { api } from "../../services/api";
 import DetailCharacters from "../../components/detailCharacters";
 
 
-export default function Personagens (){
+export default function Personagens() {
 
     const [personagens, setPersonagens] = useState([])
-    const [locations, setLocations] = useState([]);
-
+    
     const getId = useParams()
     console.log(getId)
 
     const getPersonagens = async() => {
-        const res = await api.get(`/characters/${getId}`)
+        const res = await api.get(`/character/${getId.id}`)
         console.log(res)
-        setPersonagens(res.data.results)
+        setPersonagens(res.data)
     };
-
-    const getLocations = async () => {        
-        const locationsRes = await api.get("/locations");
-        setLocations(locationsRes.data.results);
-    };
-
 
     useEffect(() => {
         getPersonagens();
-        getLocations();
+       
     }, []);
 
     return (
         <>
         <Header/>       
-        <DetailCharacters personagens={personagens} locations={locations} />
+        <DetailCharacters personagens={personagens} />
         <Footer />
         </>
     )

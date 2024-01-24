@@ -9,10 +9,12 @@ ul {
     align-items: center;    
     list-style: none;  
     text-decoration: none;  
-    font-size: 19px;
+    font-family: "Cabin";
+    font-size: 20px;
     font-weight: bold;
     gap: 48px;      
-    padding: 25px;    
+    padding: 25px 75px 25px;  
+    //padding-right: 75px;  
 
   }
 
