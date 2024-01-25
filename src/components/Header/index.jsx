@@ -10,8 +10,8 @@ export default function Header (){
 
             <ul className={style.lista}>          
                     
-                <li><Link className={style.link} to="/">Início</Link></li>
-               {/*<li><Link className={style.link} to="/home">Personagens</Link></li>*/}
+                <li><Link className={style.link} to="/">Home</Link></li>
+               
                 <li><a className={style.link} href="#saiba-mais">Saiba mais</a></li>
                 
             </ul>

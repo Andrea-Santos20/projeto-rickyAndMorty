@@ -9,14 +9,16 @@ export default function DetailCharacters({ personagens }) {
 
     <section className={styles.container}>
       
+      <div className={styles.name}>
+        <h1>{personagens?.name}</h1>
+      </div>
+
+      <main className={styles.imgInfo}>
       <div className={styles.img}>
         <img src={personagens.image} alt="" />
       </div>
-
-      <div className={styles.title}>
-        <h1>{personagens?.name}</h1>
-
-        <div className={styles.information}>
+     
+      <div className={styles.information}>
           
           <p>{personagens.status}</p>
           <p>{personagens.species}</p>
@@ -25,8 +27,8 @@ export default function DetailCharacters({ personagens }) {
           <p>{personagens.origin?.name}</p>
           <p>{personagens.location?.name}</p>
 
-        </div>
       </div>
+      </main>
       
     </section>
   );

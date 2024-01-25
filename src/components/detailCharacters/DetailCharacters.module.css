@@ -1,43 +1,59 @@
 .container {
-  //background-color: #000;
-  height: 100vh;
-  position: relative;
+  
+  //position: relative;
+  
 }
 
-.img {
-  max-width: 100%;
-  height: auto;
-  padding: 10px;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+.name {   
   display: flex;
-  align-items: self-start;
-  justify-content: center;
-}
-
-.title {   
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: center; 
   font-weight: bold;  
   font-size: 40px;
-  padding: 10px;
-  margin: 16px;
-  margin-top: 32px;
-  margin-bottom: 4rem;  
+  color:  #fff;
+  margin-top: 50px;
+  
+}
+
+.name:hover {
+  color: #FF4500;
+}
+
+.imgInfo{  
+  width: 25vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 50px;   
 }
 
 
-
-.information {
-  position: absolute;
-  top: 22rem;
-  right: 8rem;
-  background: #fff;
-  padding: 2rem;
-  line-height: 2.5rem;
+.img {
+  padding: 5px;
+ 
 }
 
 
+.information { 
+  font-family: "Cabin";
+  font-weight: bold; 
+  font-size: 20px;
 
+  background-color: #9e9090;
+  color: #FF4500;
+
+  border-radius: 10px;
+  padding: 15px;
+
+  overflow: hidden;
+  //width: 200px; /* Defina a largura desejada para o contêiner da imagem */
+  transition: transform 0.3s ease-in-out; 
+}
+
+.information:hover {
+  background-color: #FF9900;
+  color: #FFFFFF;
+  transform: scale(1.2);
+}
 
